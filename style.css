@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(116, 215, 248), #c526c5, rgb(250, 160, 236));
+    color: white;
+}
+
+nav {
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    padding-left: 12px;
+}
+
+.name {
+    font-size: 25px;
+}
+
+nav .menu img {
+    height: 30px;
+    padding-right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dept {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-color: #d800ff;
+}
+
+.innerContainer {
+    padding-top: 12px;
+    width: 50vw;
+    /* background-color: red; */
+}
+
+.innerContainer .row {
+    background-color: black;
+    /* border: 1px solid black; */
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+    border-radius: 12px;
+}
+
+.innerContainer .row .head {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 15px;
+    font-size: 25px;
+    padding-left: 15%;
+}
+
+.innerContainer .row .topic {
+    /* width: 50vw; */
+    /* background-color: red; */
+    background-color: #ffffff;
+    display: none;
+    color: black;
+    border-radius: 8px;
+}
+
+.topic {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height  0.7s ease-out;
+}
+
+.innerContainer .row .topic ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innerContainer .row .topic ul li {
+    list-style: none;
+    /* background-color: #d800ff; */
+    width: 50vw;
+    font-size: 20px;
+}
+
+.innerRow {
+    display: flex;
+    /* background-color: red; */
+    font-size: 22px;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.subtopic{
+    background-color: #000080;
+    border: solid 1px white;
+    width: 20vw;
+    margin: auto;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    color: white;
+    border-radius: 7px;
+}
+
+.subtopic .active {
+    display: block;
+}
+
+.innerContainer .row .topic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerContainer .row .topic  a {
+    text-decoration: none;
+    color: white;
+}
+
+.innerContainer .row .topic ul li a:hover {
+    background-color: #d800ff;
+}
+
+.subtopic ul a {
+    color: white;
+}
+
+.subtopic span {
+    border: solid 1px #f700ff;
+    display: flex;
+    flex-direction: column;
+    /* margin: 1px; */
+    padding: 2px;
+}
+
+@media screen and (max-width: 400px) {
+    .dept {
+        font-size: 25px;
+    }
+    .innerContainer {
+        padding-top: 2px;
+        width: 85vw;
+    }
+    .innerContainer .row {
+        border-radius: 8px;
+    }
+    .innerContainer .row .head {
+        padding: 10px;
+        font-size: 18px;
+        padding-left: 3%;
+    }
+    .innerContainer .row .topic ul li {
+        font-size: 16px;
+        width: 60vw;
+    }
+
+    .innerRow {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 2%;
+    }
+    .subtopic {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px){
+    .dept {
+        font-size: 25px;
+    }
+    .innerContainer {
+        padding-top: 2px;
+        width: 85vw;
+    }
+    .innerContainer .row {
+        border-radius: 8px;
+    }
+    .innerContainer .row .head {
+        padding: 10px;
+        font-size: 18px;
+        padding-left: 3%;
+    }
+    .innerContainer .row .topic ul li {
+        font-size: 16px;
+        width: 60vw;
+    }
+
+    .innerRow {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 2%;
+    }
+    .subtopic {
+        width: 50vw;
+    }
+}
