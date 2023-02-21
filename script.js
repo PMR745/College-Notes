@@ -1,5 +1,6 @@
 var head = document.getElementsByClassName("head")
 var topics = document.getElementsByClassName("innerRow")
+var subtopic = document.getElementsByClassName("subtopic")
 var i;
 var j;
 var height;

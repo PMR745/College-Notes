@@ -49,7 +49,8 @@ nav .menu img {
     font-family: 'Cormorant Garamond', serif;
     font-size: 35px;
     text-decoration: underline;
-    text-decoration-color: #d800ff;
+    text-decoration-color: #00d0ff;
+    font-weight: 600;
 }
 
 .innerContainer {
@@ -88,13 +89,14 @@ nav .menu img {
 .topic {
     max-height: 0;
     overflow: hidden;
-    transition: max-height  0.7s ease-out;
+    transition: max-height  1s ease-out;
 }
 
 .innerContainer .row .topic ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px;
 }
 
 .innerContainer .row .topic ul li {
@@ -153,7 +155,7 @@ nav .menu img {
     display: flex;
     flex-direction: column;
     /* margin: 1px; */
-    padding: 2px;
+    padding: 1px 12px;
 }
 
 @media screen and (max-width: 400px) {
