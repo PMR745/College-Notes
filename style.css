@@ -158,10 +158,11 @@ nav .menu img {
 
 @media screen and (max-width: 400px) {
     .dept {
-        font-size: 25px;
+        padding-top: 10px;
+        font-size: 28px;
     }
     .innerContainer {
-        padding-top: 2px;
+        padding-top: 16px;
         width: 85vw;
     }
     .innerContainer .row {
