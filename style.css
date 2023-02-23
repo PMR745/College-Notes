@@ -38,6 +38,7 @@ nav .menu img {
     cursor: pointer;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -97,6 +98,7 @@ nav .menu img {
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    row-gap: 7px;
 }
 
 .innerContainer .row .topic ul li {
@@ -118,7 +120,7 @@ nav .menu img {
 .subtopic{
     background-color: #000080;
     border: solid 1px white;
-    width: 20vw;
+    width: 30vw;
     margin: auto;
     display: none;
     overflow: hidden;
@@ -155,10 +157,31 @@ nav .menu img {
     display: flex;
     flex-direction: column;
     /* margin: 1px; */
-    padding: 1px 12px;
+    padding: 5px 12px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    .sidebar {
+        background-color: rgb(1, 1, 126);
+        position: absolute;
+        right: 0;
+        top: 50px;
+        padding: 10px;
+        height: calc(100vh - 70px);
+        font-family: 'Roboto', sans-serif;
+        pointer-events: none;
+        transition: all 0.4s ease;
+        width: 1px;
+        opacity: 0;
+        /* display: none; */
+    }
+    .wid {
+        width: 30vw;
+        /* display: block; */
+    }
+    nav .menu img {
+        display: block;
+    }
     .dept {
         padding-top: 10px;
         font-size: 28px;
@@ -188,9 +211,13 @@ nav .menu img {
     .subtopic {
         width: 50vw;
     }
+    
 }
 
-@media screen and (min-width: 401px) and (max-width: 700px){
+@media screen and (min-width: 501px) and (max-width: 950px){
+    nav .menu img {
+        display: block;
+    }
     .dept {
         padding-top: 10px;
         font-size: 25px;
