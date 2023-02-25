@@ -57,8 +57,6 @@ for(j = 0; j < topics.length; j++) {
 
 menu?.addEventListener("click", function() {
     if(sidebar) {
-        sidebar.style.opacity == "1" ? sidebar.style.opacity = "0" : sidebar.style.opacity = "1"
-        sidebar.classList.toggle('wid')
-        
+        sidebar.classList.toggle("active")
     }
 })
