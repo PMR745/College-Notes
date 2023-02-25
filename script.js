@@ -11,14 +11,14 @@ var height;
 
 for(i = 0; i < head.length; i++) {
     head[i].addEventListener("click", function(){
-        var sp = this.getElementsByClassName("arrow");
-        console.log(sp[0].innerHTML == "&#9660;")
-        if(sp[0].innerHTML == "&#9660;") {
-            sp[0].innerHTML = "&#9650;"
-        }
-        else {
-            sp[0].innerHTML = "&#9660;"
-        }
+        // var sp = this.getElementsByClassName("arrow");
+        // console.log(sp[0].innerHTML == "&#9660;")
+        // if(sp[0].innerHTML == "&#9660;") {
+        //     sp[0].innerHTML = "&#9650;"
+        // }
+        // else {
+        //     sp[0].innerHTML = "&#9660;"
+        // }
         var topic = this.nextElementSibling;
         if(topic) {
             topic.style.display == "block" ? topic.style.display = "none" : topic.style.display = "block"
@@ -59,5 +59,6 @@ menu?.addEventListener("click", function() {
     if(sidebar) {
         sidebar.style.opacity == "1" ? sidebar.style.opacity = "0" : sidebar.style.opacity = "1"
         sidebar.classList.toggle('wid')
+        
     }
 })
