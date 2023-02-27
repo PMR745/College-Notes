@@ -52,7 +52,6 @@ nav .menu img {
     width: 13vw;
     display: flex;
     justify-content: center;
-    border-radius: 0px 0px 7px 7px; 
     /* opacity: 0; */
     /* display: none; */
 }
@@ -230,8 +229,6 @@ li a {
 
 .innerContainer .row .topic ul li a:hover {
     background-color: #d800ff;
-    font-weight: 550;
-    color: rgb(0, 0, 0);
 }
 
 .subtopic ul a {
@@ -240,9 +237,7 @@ li a {
 
 .subtopic span {
     border: solid 1px #f700ff;
-    width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
     /* margin: 1px; */
     padding: 5px 12px;
