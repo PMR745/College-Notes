@@ -51,7 +51,9 @@ nav .menu img {
     transition: all 0.3s ease;
     width: 13vw;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
     border-radius: 0px 0px 7px 7px; 
     /* opacity: 0; */
     /* display: none; */
@@ -96,6 +98,11 @@ nav .menu img {
     font-size: 20px;
 }
 
+.links {
+    position: absolute;
+    top: 70%;
+}
+
 li a {
     width: 100%;
     text-decoration: none;
@@ -107,14 +114,15 @@ li a {
 
 .sidebar.active {
     width: 5vw;
-    height: 100vh;
+    height: calc(100vh - 70px);
+    /* max-height: 100vh; */
 }
 
 .sidebar.active ul li:hover .extra {
     display: block;
     position: absolute;
     right: 8vw;
-    top: 15px;
+    /* top: 15px; */
 }
 
 .sidebar.active .extra{
@@ -260,6 +268,7 @@ li a {
     }
     .container {
         width: calc(100vw - 15vw);
+        padding-left: 7px;
     }
     nav .menu img {
         display: block;
