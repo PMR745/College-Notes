@@ -95,6 +95,11 @@ nav .menu img {
     font-size: 20px;
 }
 
+.links {
+    position: absolute;
+    top: 70%;
+}
+
 li a {
     width: 100%;
     text-decoration: none;
@@ -106,7 +111,7 @@ li a {
 
 .sidebar.active {
     width: 5vw;
-    height: 100vh;
+    height: calc(100vh - 70px);
 }
 
 .sidebar.active ul li:hover .extra {
@@ -197,7 +202,7 @@ li a {
     font-size: 22px;
     width: 80%;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 7px 10%;
 }
 
 .subtopic{
@@ -208,7 +213,7 @@ li a {
     display: none;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 1s ease;
     color: white;
     border-radius: 7px;
 }
@@ -253,6 +258,9 @@ li a {
     .sidebar ul li {
         width: 38vw;
     }
+    .sidebar.active ul li:hover .extra {
+        right: 18vw;
+    }
     .container {
         width: calc(100vw - 15vw);
     }
@@ -277,16 +285,16 @@ li a {
     }
     .innerContainer .row .topic ul li {
         font-size: 18px;
-        width: 60vw;
+        width: 70vw;
     }
 
     .innerRow {
         width: 100%;
         font-size: 18px;
-        padding: 0 2%;
+        padding: 7px 2%;
     }
     .subtopic {
-        width: 50vw;
+        width: 60vw;
     }
     
 }

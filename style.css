@@ -38,25 +38,25 @@ nav .menu img {
     cursor: pointer;
 }
 
-
-
 .sidebar {
     background-color: rgb(1, 1, 126);
     position: absolute;
     right: 0;
     top: 50px;
     padding: 10px;
-    height: calc(100vh - 70px);
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease;
     width: 13vw;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     border-radius: 0px 0px 7px 7px; 
-    /* opacity: 0; */
-    /* display: none; */
+    height: 100vh;
+}
+
+.sidebar.active {
+    width: 5vw;
+    height: 100vh;
 }
 
 .sidebar ul li {
@@ -75,7 +75,7 @@ nav .menu img {
 .sidebar.active ul li {
     width: 50px;
     height: 50px;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .sidebar ul li:hover {
@@ -110,12 +110,6 @@ li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.sidebar.active {
-    width: 5vw;
-    height: calc(100vh - 70px);
-    /* max-height: 100vh; */
 }
 
 .sidebar.active ul li:hover .extra {
@@ -234,12 +228,13 @@ li a {
 .innerContainer .row .topic  a {
     text-decoration: none;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .innerContainer .row .topic ul li a:hover {
     background-color: #d800ff;
     font-weight: 550;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
 }
 
 .subtopic ul a {
@@ -265,6 +260,9 @@ li a {
     }
     .sidebar ul li {
         width: 38vw;
+    }
+    .sidebar.active ul li:hover .extra {
+        right: 18vw;
     }
     .container {
         width: calc(100vw - 15vw);
