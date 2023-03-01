@@ -253,7 +253,7 @@ li a {
         width: 40vw;
     }
     .sidebar.active {
-        width: 9vw;
+        width: 7vw;
     }
     .sidebar ul li {
         width: 38vw;
@@ -263,6 +263,7 @@ li a {
     }
     .container {
         width: calc(100vw - 15vw);
+        padding-left: 7px;
     }
     nav .menu img {
         display: block;
