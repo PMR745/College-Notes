@@ -12,7 +12,6 @@ body {
     color: white;
 }
 
-
 nav {
     height: 50px;
     background-color: black;
@@ -201,7 +200,7 @@ li a {
     font-size: 22px;
     width: 80%;
     justify-content: space-between;
-    padding: 7px 10%;
+    padding: 0 10%;
 }
 
 .subtopic{
@@ -212,7 +211,7 @@ li a {
     display: none;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 1s ease;
+    transition: max-height 0.3s ease-out;
     color: white;
     border-radius: 7px;
 }
@@ -229,10 +228,13 @@ li a {
 .innerContainer .row .topic  a {
     text-decoration: none;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .innerContainer .row .topic ul li a:hover {
     background-color: #d800ff;
+    font-weight: 550;
+    /* color: rgb(0, 0, 0); */
 }
 
 .subtopic ul a {
@@ -241,7 +243,9 @@ li a {
 
 .subtopic span {
     border: solid 1px #f700ff;
+    width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     /* margin: 1px; */
     padding: 5px 12px;
@@ -285,16 +289,16 @@ li a {
     }
     .innerContainer .row .topic ul li {
         font-size: 18px;
-        width: 70vw;
+        width: 60vw;
     }
 
     .innerRow {
         width: 100%;
         font-size: 18px;
-        padding: 7px 2%;
+        padding: 0 2%;
     }
     .subtopic {
-        width: 60vw;
+        width: 50vw;
     }
     
 }

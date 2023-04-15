@@ -9,7 +9,6 @@ var height;
 // var disp;
 
 
-
 for(i = 0; i < head.length; i++) {
     head[i].addEventListener("click", function(){
         // var sp = this.getElementsByClassName("arrow");
@@ -29,7 +28,7 @@ for(i = 0; i < head.length; i++) {
         }
         else {
             height = topic.scrollHeight
-            topic.style.maxHeight = 3*height + topic.scrollHeight + "px";
+            topic.style.maxHeight = 10*height + topic.scrollHeight + "px";
         }
 
         const sub = topic.getElementsByClassName("subtopic")
@@ -51,7 +50,6 @@ for(j = 0; j < topics.length; j++) {
         }
 
         topic.style.maxHeight = topic.scrollHeight + "px";
-
 
     })
 }
