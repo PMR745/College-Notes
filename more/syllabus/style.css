@@ -163,18 +163,6 @@ nav .menu img {
 }
 
 @media screen and (max-width: 500px) {
-    .sidebar {
-        width: 40vw;
-    }
-    .sidebar.active {
-        width: 7vw;
-    }
-    .sidebar ul li {
-        width: 38vw;
-    }
-    .sidebar.active ul li:hover .extra {
-        right: 18vw;
-    }
     .container {
         width: calc(100vw - 15vw);
         padding-left: 7px;
@@ -215,12 +203,6 @@ nav .menu img {
 }
 
 @media screen and (min-width: 501px) and (max-width: 950px){
-    .sidebar {
-        width: 25vw;
-    }
-    .sidebar.active {
-        width: 8vw;
-    }
     nav .menu img {
         display: block;
     }
