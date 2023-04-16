@@ -1,5 +1,6 @@
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
 }
 
 .sidebar {
@@ -15,7 +16,7 @@ html {
     flex-direction: column;
     align-items: center;
     border-radius: 0px 0px 7px 7px; 
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 .sidebar.active {
@@ -66,7 +67,8 @@ html {
 
 .links {
     position: absolute;
-    top: 70%;
+    /* top: 70%; */
+    bottom: 10%;
 }
 
 li a {
