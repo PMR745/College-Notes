@@ -92,7 +92,7 @@ nav .menu img {
 .topic {
     max-height: 0;
     overflow: hidden;
-    transition: max-height  1s ease-out;
+    transition: max-height  5s ease-out;
 }
 
 .innerContainer .row .topic ul {
