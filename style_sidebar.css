@@ -1,3 +1,6 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 .sidebar {
     background-color: rgb(1, 1, 126);
