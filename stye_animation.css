@@ -1,0 +1,48 @@
+.row {
+    position: relative;
+    animation-name: bottomUp;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.dept {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    
+}
+
+.logo {
+    text-shadow:
+    0 0 7px #3005ec,
+    0 0 10px #2419be,
+    0 0 21px #1b46c7,
+    0 0 42px rgb(23, 108, 255),
+    0 0 82px rgb(20, 93, 253),
+    0 0 92px rgb(47, 17, 243),
+    0 0 102px rgb(65, 4, 235),
+    0 0 151px rgb(66, 66, 194);
+}
+
+@keyframes bottomUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
