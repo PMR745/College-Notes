@@ -20,6 +20,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .logo {
@@ -58,12 +59,15 @@ nav .menu img {
 }
 
 .innerContainer {
+    position: relative;
     padding-top: 12px;
     width: 50vw;
+    z-index: 1;
     /* background-color: red; */
 }
 
 .innerContainer .row {
+    /* z-index: 100; */
     background-color: black;
     /* border: 1px solid black; */
     color: white;
