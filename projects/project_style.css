@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    color: #bab9bf;
+    font-size: 35px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #181824;
+    height: 60px;
+}
+
+.brand {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    color: snow;
+    padding-left: 20px;
+    font-family: 'Noto Serif Gujarati', serif;
+    font-weight: bold;
+}
+
+nav ul{
+    /* background-color: blue; */
+    display: flex;
+    margin: auto;        
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #bab9bf;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    background-color: #273132;
+    color: snow;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding: 50px 60px;
+}
+
+.name {
+    z-index: 1000;
+    font-size: 32px;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 200px;
+    background-color: #FFF;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.box:hover {
+    /* box-shadow: -8px 8px 2px 2px; */
+    border: 3px solid rgb(8, 123, 238);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 125px;
+    width: 200px;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+    z-index: 5;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.description {
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    font-size: 15px;
+    color: black;
+    height: 50px;
+    width: 120px;
+    margin-top: 75px;
+}
+
+.learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.learn:hover {
+    background-color: rgb(109, 1, 242);
+}
+
+.learn a {
+    text-decoration: none;
+    color: black;
+}
+
+.learn a:hover {
+    color: white;
+}

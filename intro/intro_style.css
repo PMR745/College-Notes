@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    color: #bab9bf;
+    font-size: 35px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #181824;
+    height: 60px;
+}
+
+.brand {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    color: snow;
+    padding-left: 20px;
+    font-family: 'Noto Serif Gujarati', serif;
+    font-weight: bold;
+}
+
+nav ul{
+    /* background-color: blue; */
+    display: flex;
+    margin: auto;        
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #bab9bf;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+.intro {
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #273132;
+    color: snow;
+    height: 100%;
+    /* width: 100%; */
+    /* position: fixed; */
+    padding: 50px 60px;
+}
+
+.head {
+    font-family: 'Noto Serif Gujarati', serif;
+}
+.font {
+    width: 90%;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+.education {
+    padding-top: 15px;
+}
+.journey {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 319px) {
+    nav {
+        font-size: 20px;
+        height: 40px;
+    }
+    nav ul li{
+        font-size: 10px;
+    }
+    .brand {
+        padding-left: 5px;
+    }
+    .container {
+        padding: 10px 20px;
+    }
+    .head {
+        font-size: 22px;
+    }
+    .font {
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:450px) {
+    nav {
+        font-size: 25px;
+        height: 40px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    .brand {
+        padding-left: 10px;
+    }
+    .container {
+        padding: 10px 20px;
+    }
+    .head {
+        font-size: 22px;
+    }
+    .font {
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 650px) {
+    .container {
+        padding: 20px 30px;
+    }
+    .font {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 950px) {
+    .container {
+        padding: 25px;
+    }
+    .font {
+        width: 90%;
+    }
+}
