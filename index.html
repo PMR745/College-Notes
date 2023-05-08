@@ -1,41 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/notebook.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prathamesh Rajput</title>
+    <title>College Notes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_nav.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+    <link rel="stylesheet" href="stye_animation.css">
 </head>
+
 <body>
     <nav>
-        <div class="brand">PMR</div>
-        <ul>
-            <li><a href="index.html" class="home">Home</a></li>
-            <li><a href="intro/intro.html">Intro</a></li>
-            <li><a href="skills/skills.html">Skills</a></li>
-            <li><a href="contact/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="info">
-            <div class="greet">
-                Hi, I'm 
+        <div class="logo">PMR</div>
+        <div class="name">College Notes</div>
+        <div class="menu">
+            <img src="img/menu.png" alt="menu" id="menu">
+        </div>
+        <div class="sidebar active" id="sidebar">
+            <div class="navList" id="navList">
+                <ul>
+                    <li>
+                        <a href="more/syllabus/index.html">
+                            <img src="img/syllabusw.png" alt="" id="syllabus">
+                            <span class="extra">Syllabus</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="more/Papers/index.html">
+                            <img src="img/cae.png" alt="" id="cae">
+                            <span class="extra">Papers</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="name">
-                Prathamesh Rajput
-            </div>
-            <div class="about">
-                I'm a Developer who knows Web Development and learning Game Development with Unity.
-            </div>
-            <div class="moreabout">
-                I'm currently pursing my B.Tech Computer Engineering degree from G.H Raisoni College of Engineering.
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/PMR745" target="_blank">
+                            <img src="img/git.png" alt="github">
+                            <span class="extra">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target="_blank">
+                            <img src="img/linkedIn.png" alt="github">
+                            <span class="extra">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="img">
-            <img src="img/dev.jpg" alt="">
+    </nav>
+
+    <div class="container">
+        <div class="dept">S.Y B-Tech</div>
+        <div class="innerContainer">
+            <div class="row">
+                <div class="head">
+                    <span>Computer Network (CN)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1Dz2L18TDUKmEkXVySjUWV9U6Br9_F9Qu/view?usp=sharing" target="_blank">
+                                    <span>Basics of Computer Network</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/113H46NE8FB1jezFxEaOWm12ag56M606y/view?usp=sharing" target="_blank">
+                                    <span>OSI Model</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/16wecuzlx88l51-MWonc-bPqxPEk_wWhY/view?usp=sharing" target="_blank"><span>Protocol Architecture</span></a>
+                                <a href="https://drive.google.com/file/d/1uomIM7_r62fO58HSG7PbOjReXavvGRe5/view?usp=sharing" target="_blank">
+                                    <span>Switching Techniques</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1xWgD7HIYjHXr8G0hGfXlYf8WVDiGQfTS/view?usp=sharing" target="_blank">
+                                    <span>Part 1</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1fZobAi3cDqTWzVXjPdIoudqlTT3cGj3e/view?usp=sharing" target="_blank">
+                                    <span>Part 2</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1AtArhVFUKSnZHP3yiS1exwx9-1K6RtBw/view?usp=sharing" target="_blank">
+                                    <span>Part 3</span>
+                                </a>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1bxV63--GUgjImi8KATUIYvBOXXN2P4zL/view?usp=share_link" target="_blank">
+                                    <span>Part 1: Congestion Control</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1i3cUhw4vUi8bm7TwQuUM5Ml8I0B1kUU7/view?usp=share_link" target="_blank">
+                                    <span>Part 2: TCP</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1qXnc3j2FfpUcStxoaMVtA95s7M4u9YrN/view?usp=sharing" target="_blank">
+                                    <span>TCP Flow Control & Error Control</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 4</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1Us2PWiPL4x3qYjXYBIZ_QNa0UNdwsUHk/view?usp=sharing" target="_blank">
+                                    <span>Part 1: Application Layer Protocol</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1FKJvzKeYpwAf8S9TnH-PnlMi30xbAfVY/view?usp=sharing" target="_blank">
+                                    <span>Part 2: File Transfer Protocol (FTP)</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1ogPlsI6gTLjO70AiLW78ZTZD-JBwW0fa/view?usp=sharing" target="_blank">
+                                    <span>Part 3: SMPT, POP & IMAP</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/15bHawqkXZ-EdmMYZCtkOyXM24q3qeXOD/view?usp=sharing" target="_blank">
+                                    <span>DHCP</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1kYZlZdKO3fi2aQtZg7cu6TuJXy56J_Zy/view?usp=sharing" target="_blank">
+                                    <span>DHCP & BOOTP</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 5</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/13noqN-N24pLiMxgDXgG4Khnkuifz2Ml-/view?usp=sharing" target="_blank">
+                                    <span>Part 1: Wifi, Bluetooth</span>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1Xa5X8Mm4ao6GNXZSuiGJxevsqNcMuMFh/view?usp=sharing" target="_blank">
+                                    <span>Part 2: Sensor Network</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Operating Systems (OS)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1hP1XbyB8Q-pEAym9nw8wXpgtyJb8cm__/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1hbVEfZtZbrawdtGpLIK9v7afSSMCbHYP/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 4</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/188VOeTMlOIRGxAIniM2uuTaJcLNxhDI9/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1sLYodGqy-VHEVkaBJs4rKQ8SUr7IpAK2/view?usp=sharing" target="_blank">
+                                <span>Problems</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Design and Analysis of Algorithms (DAA)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1WOqg3YV2NOS1hirpjPm1OsbL_JeB-W8B/view?usp=sharing" target="_blank">
+                                <span>Notations</span>
+                            </a>
+                                <a href="https://drive.google.com/file/d/1xcaBMo3Ttt9cigeqnqDucUMUJDmrc-rV/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1-W9fcWotKZ3I70LcKTi8AxeYXgPUprq0/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1zq3iuOX8kctJDN-jWCaiZ2Y8uw71PRHh/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 4</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1dAcgGtrcQCwd-5-5HAupF37UP7OlDcjc/view?usp=sharing" target="_blank">
+                                <span>Handwritten Notes</span>
+                                <a href="https://docs.google.com/document/d/1rWFm6lIxUbHDm4SYwESgHRSY9_ol1zEb/edit?usp=sharing&ouid=109802791134227622503&rtpof=true&sd=true" target="_blank">
+                                <span>Difference b/w Greedy and Dynamic Programming</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Applications of Microprocessors and Microcontrollers (AMM)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1mmPqXT5UrM-HK_qciTAQEMnd7e0EWneY/view?usp=sharing" target="_blank">
+                                    <span>Introduction to Microprocessors</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1roDNTzhL97DTs011eygnVdDJzeM4-Y1P/view?usp=sharing" target="_blank">
+                                    <span>Microcontrollers</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1zGs4qUe2nmuN3NRhCj-7R23o66ZJPkB-/view?usp=sharing" target="_blank">
+                                    <span>Assembly Language Programming</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Unit 4</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1EvQXabXLnFdC-VIDVqlSSCU5zXOh17gS/view?usp=sharing" target="_blank">
+                                    <span>Programming</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Computer Network-Practical (CN-P)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Lab Manual</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1o5cjVaovdXI8aQWWdEt9K8YqEbDA8zKT/view?usp=sharing" target="_blank">
+                                <span>Lab Manual</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1-ecWKzmJFsm5PZirXCtEYN4akvyUGuOW/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1X32lwWkPXCysK55YY53IWHETd6H2gsvZ/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1E_EGbB0RlczJKPBuzsK9qfvrFB4pwhqp/view?usp=sharing" target="_blank">
+                                <span>Steps</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                            <a href="https://drive.google.com/file/d/1hkEWNR5YjRFHXcQPHHWH79epiEK5-K3T/view?usp=sharing" target="_blank">
+                                <span>Steps</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 4</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                            <a href="https://drive.google.com/file/d/1JQKT-Qd-PwKHsa1Jr6oNU4IxAN2TiESp/view?usp=sharing" target="_blank">
+                                <span>Write Up and Steps</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Operating System-Practical (OS-P)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Lab Manual</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1pRYuWfyCawJWJeknQ3AUMToP6fFb-e1R/view?usp=sharing" target="_blank">
+                                <span>Lab Manual</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Data Analysis Using R (DAR-P)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Lab Manual</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1rwl_AH9d9eC3eQHtGJ5-MM7R4tq_k02n/view?usp=sharing" target="_blank">
+                                <span>Lab Manual</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1Yv_KJfIdG7ftAz3Lnxd_UG4VEocxT2c4/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1oeuHXPdjzhU7nw73TI_8Om_BJyLlwsF-/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1DddRcHeESlm2YsE6GxuNa9Rd8g2z0Ray/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Design and Analysis of Algorithms - Practical (DAA-P)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1LnaXNWlmk7ngpgiiXFCVXr_07_vEpD-P/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/11u6Br6l2yBt1dSjTLVivfKjHA21zLChQ/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1hXkPXFG-mj85BrdvSnxcg-RiTqPhLGzQ/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Lab Manual</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1K4CBWazLFjIxCOQM1PxtgfgZ74uMxeml/view?usp=sharing" target="_blank">
+                                <span>Experiment 4 to 12</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head">
+                    <span>Applications of Microprocessors and Microcontrollers - Practical (AMM-P)</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+                <div class="topic">
+                    <ul>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 1</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1H8bF4OrSv-BbH8Ianb5OEfWh-PmrTJzO/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 2</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1ogbT-Z9eESgiRUmLsrd7iY_Rb-QnqvIk/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 3</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/19IJV4kswgzxXDWlLqNW_uwj_PoXCpaHM/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 4</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1Od3EUc0JR7AR29wzWNab9JJdtFbXGexj/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 5</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1duC9lFKaujbE1qP57C9-Dm1FLFEku9dK/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 6</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1Lo4yAAttU_PcqLcBbBWWBgNQJriPyXfB/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="innerRow">
+                                <span>Practical 7</span>
+                                <span class="arrow">&#9660;</span>
+                            </span>
+                            <div class="subtopic">
+                                <a href="https://drive.google.com/file/d/1CL3VYibq-aw7r7Q6NOuNXCoaqTcvhRl-/view?usp=sharing" target="_blank">
+                                <span>Write Up</span>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
