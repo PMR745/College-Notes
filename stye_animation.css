@@ -24,6 +24,11 @@
     0 0 92px rgb(47, 17, 243),
     0 0 102px rgb(65, 4, 235),
     0 0 151px rgb(66, 66, 194);
+
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes bottomUp {
@@ -43,6 +48,15 @@
     }
     to {
         transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
